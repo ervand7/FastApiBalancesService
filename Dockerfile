@@ -30,6 +30,5 @@ RUN pip install -vvv -e . # Install my app
 
 COPY --chown=app migrations /app/migrations/
 COPY --chown=app alembic.ini /app/alembic.ini
-COPY --chown=app tests /app/tests/
 
 USER app
